@@ -6,6 +6,7 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
+  
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -23,17 +24,18 @@ a:hover {
 }
 
 #body-home {
-  margin: 0;
   display: flex;
   justify-content: center;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  min-height: 100vh;  
+  flex-direction: column;
+} 
+
+body{
   background-image: url('./pages/bg.jpg.jpg');
   background-size: cover;
   background-position: center;
-  flex-direction: column;
-} 
+}
 
 h1 {
   font-size: 4px;
@@ -45,13 +47,26 @@ h1 {
 
 .h1-title {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 50px;
+  font-size: 300%;
+  text-align: center;
   line-height: 1.1;
   align-items: center;
   justify-content: center;
   display: flex;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   margin-top: -30px;
+}
+
+.h1-title-hobbies {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 300%;
+  text-align: center;
+  line-height: 1.1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
 }
 
 button {
@@ -86,10 +101,8 @@ button:focus-visible {
   }
 }
 
-.center-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media only screen and (max-width: 600px) {
+  /* Styles for small screens go here */
 }
 
 .btn {
@@ -102,23 +115,31 @@ button:focus-visible {
   margin: 0.5px;
 }
 
-.text-center {
-  margin-top: 20px;
-  width: 730px;
-  
+.created-form {
+  margin-top: 30px;
+  display: flex;
 }
 
-.mb-3 {
-  margin-top: 30px;
-  width: 725px !important;
+.calc-json-btn {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hobbies-box {
+  display: flex;
+  margin-top: 30px;
+}
+
+.hobbies-page {
+  padding: 10%;
 }
 
 .page-body {
   display: block;
 }
 
-/* Calculator.css */
+/*----- Calculator.css -----*/
 .calculator {
   width: 400px;
   margin: 20px;

@@ -20,12 +20,12 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
           </Nav>
         </Container>
       </Navbar>
+
     <BrowserRouter>
-   
-      
       <Routes>
         <Route path="/home" element={<Home/>}></Route>
         <Route path="/calculator" element={<Calculator/>}></Route>
+        <Route path="/hobbies" element={<Hobbies/>}></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
