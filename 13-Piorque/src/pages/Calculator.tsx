@@ -23,6 +23,7 @@ const Calculator = () => {
 
   return (
     <div id="body-home">
+      <h1 className='h1-title-calculator'>CALCULATOR</h1>
       <div className="calculator">
         <div className="calculator-display">{display}</div>
         <div className="calculator-row">

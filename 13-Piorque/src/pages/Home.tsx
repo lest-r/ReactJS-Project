@@ -27,7 +27,7 @@ export default function Home() {
           <div className="calc-json-btn center-container container-fluid d-flex">
             
               <Button className='col-6' variant="outline-secondary" href="/calculator">Calculator Sample</Button>
-              <Button className='col-6' variant="outline-secondary" href="/hobbies">JSON Sample</Button>
+              <Button className='col-6' variant="outline-secondary" href="/JSON">JSON Sample</Button>
             
           </div>
         
@@ -37,7 +37,7 @@ export default function Home() {
               <Card.Text>
                 Hi! My name is Lester Piorque. By clicking the button below you will learn more about me.
               </Card.Text>
-            <Button className='btn-learn-more' variant="outline-secondary">Learn More</Button>
+            <Button className='btn-learn-more' variant="outline-secondary" href="/hobbies">Learn More</Button>
             </Card.Body>
           </Card>
 

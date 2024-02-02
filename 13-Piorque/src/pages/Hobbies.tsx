@@ -1,31 +1,54 @@
-import { Card, Row, Col, Container } from 'react-bootstrap'
+import { Card, Button } from 'react-bootstrap'
 
-function GridExample() {
+function Hobbies() {
   return (
-    <Container fluid className='vw-100'>
-    <h1 className='h1-title-hobbies'>Hobbies</h1>
-    <Row xs={1} md={2} lg={1} className="g-4 hobbies-page d-flex justify-content-center">
-    <div id='body-home'>
-      {Array.from({ length: 4 }).map((_, idx) => (
-        <Col key={idx}>
-          <Card>
-            <Card.Img variant="top" src="./pages/hobbies/hobby-1.jpg" />
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      ))}
+    <div id="body-home">
+      <h1 className='h1-title-hobbies'>HOBBIES</h1>
+      <div className="d-flex flex-wrap justify-content-around" id="hobby-card">
+        <Card className="mb-3 hobbies-card" style={{ width: '18rem' }}>
+          <Card.Img className="hobby-pic" variant="top" src="./img/hobby-1.jpg" />
+          <Card.Body>
+            <Card.Title>Watching Movies</Card.Title>
+            <Card.Text>
+            The pleasure of watching movies lies in captivating narratives, mesmerizing visuals, and the escape they provide.
+            </Card.Text>
+            
+          </Card.Body>
+        </Card>
+        <Card className="mb-3 hobbies-card" style={{ width: '18rem' }}>
+          <Card.Img className="hobby-pic" variant="top" src="./img/hobby-2.jpg" />
+          <Card.Body>
+            <Card.Title>Traveling</Card.Title>
+            <Card.Text>
+            Traveling offers a transformative experience, explore diverse cultures, broaden perspectives, and create lasting memories.
+            </Card.Text>
+          </Card.Body>
+        </Card>
+        <Card className="mb-3 hobbies-card" style={{ width: '18rem' }}>
+          <Card.Img className="hobby-pic" variant="top" src="./img/hobby-3.jpg" />
+          <Card.Body>
+            <Card.Title>Cooking</Card.Title>
+            <Card.Text>
+            Cooking is a creative and rewarding activity that involves crafting delicious meals and experimenting with flavors and techniques.
+            </Card.Text>
+          </Card.Body>
+        </Card>
+        <Card className="mb-3 hobbies-card" style={{ width: '18rem' }}>
+          <Card.Img className="hobby-pic" variant="top" src="./img/hobby-4.jpg" />
+          <Card.Body>
+            <Card.Title>Listening to music</Card.Title>
+            <Card.Text>
+            Listening to music is a delightful experience, providing relaxation, and a deep emotional connection through diverse melodies and rhythms.
+            </Card.Text>
+          </Card.Body>
+        </Card>
 
-      </div>
-    </Row>
-    </Container>
+      
+    </div>
+    </div>
+
+  
   );
 }
 
-export default GridExample;
+export default Hobbies;

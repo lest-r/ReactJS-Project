@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Calculator from './pages/Calculator.tsx'
 import Home from './pages/Home.tsx'
 import Hobbies from './pages/Hobbies.tsx'
+import JSON from './pages/JSON.tsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Nav, Navbar } from 'react-bootstrap'
 
@@ -14,9 +15,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Container>
           <Navbar.Brand href="Home">Home</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="./Calculator">Calculator</Nav.Link>
+          <Nav.Link href="Hobbies">Hobbies</Nav.Link>
+            <Nav.Link href="Calculator">Calculator</Nav.Link>
             <Nav.Link href="JSON">JSON</Nav.Link>
-            <Nav.Link href="Hobbies">Hobbies</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
@@ -26,6 +27,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path="/home" element={<Home/>}></Route>
         <Route path="/calculator" element={<Calculator/>}></Route>
         <Route path="/hobbies" element={<Hobbies/>}></Route>
+        <Route path="/JSON" element={<JSON/>}></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
