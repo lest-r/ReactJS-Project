@@ -11,17 +11,16 @@ import { Container, Nav, Navbar } from 'react-bootstrap'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-     <Navbar bg="dark" data-bs-theme="dark" className="bg-body-tertiary">
+      <Navbar bg="dark" data-bs-theme="dark" className="bg-body-tertiary">
         <Container>
-          <Navbar.Brand href="Home">Home</Navbar.Brand>
+          <Navbar.Brand href="Home">HOME</Navbar.Brand>
           <Nav className="me-auto">
-          <Nav.Link href="Hobbies">Hobbies</Nav.Link>
-            <Nav.Link href="Calculator">Calculator</Nav.Link>
+          <Nav.Link href="Hobbies">HOBBIES</Nav.Link>
+            <Nav.Link href="Calculator">CALCULATOR</Nav.Link>
             <Nav.Link href="JSON">JSON</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
-
     <BrowserRouter>
       <Routes>
         <Route path="/home" element={<Home/>}></Route>

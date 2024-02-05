@@ -2,12 +2,9 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-  
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -19,9 +16,12 @@ a {
   color: #ffffff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #f2ca53;
 }
+
+/*----------------------------------- Start of Home.CSS -----------------------------------*/
 
 #body-home {
   display: flex;
@@ -45,7 +45,7 @@ a:hover {
 } 
 
 body{
-  background-image: url('./pages/bg.jpg.jpg');
+  background-image: url('./img/bg.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -60,7 +60,7 @@ h1 {
 
 .h1-title {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 300%;
+  font-size: 3rem;
   text-align: center;
   line-height: 1.1;
   align-items: center;
@@ -94,9 +94,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -134,34 +136,13 @@ button:focus-visible {
   display: flex;
 }
 
-.calc-json-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hobbies-box {
-  display: flex;
-  margin-top: 30px;
-}
-
-.hobbies-page {
-  padding: 10%;
-}
-
-.hobby-images {
-  max-width: 300px;
-}
-
-.hobbies-card {
-  padding: 2px;
-}
-
 .page-body {
   display: block;
 }
 
-/*----- Calculator.css -----*/
+/*----------------------------------- End of Home.CSS -----------------------------------*/
+
+/*------------------------------- Start of Calculator.CSS -------------------------------*/
 
 .h1-title-calculator {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -175,6 +156,7 @@ button:focus-visible {
   margin-top: 5px;
   margin-bottom: 20px;
 }
+
 .calculator {
   width: 400px;
   margin: 20px;
@@ -186,6 +168,8 @@ button:focus-visible {
 }
 
 .calculator-display {
+  overflow-x: auto;
+  overflow-y: hidden;
   font-size: 40px;
   margin-bottom: 20px;
   padding: 5px;
@@ -208,13 +192,27 @@ button:focus-visible {
   transition: background-color 0.3s ease;
 }
 
-.calculator-button:hover {
-  background-color: #384038;
+.calc-json-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator-button:hover, #calc-operator:hover {
+  background-color: #3c3c3c;
 }
 
 .calculator-button:active {
   background-color: #ffffff;
 }
+
+#calc-operator {
+  background-color: #6c6c6c;
+}
+
+/*------------------------------ End of Calculator.CSS ------------------------------*/
+
+/*------------------------------- Start of Hobbies.CSS -------------------------------*/
 
 .card {
   width: 80%;
@@ -236,9 +234,25 @@ button:focus-visible {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-
 .hobby-pic{
   height: 190px;
+}
+
+.hobbies-box {
+  display: flex;
+  margin-top: 30px;
+}
+
+.hobbies-page {
+  padding: 10%;
+}
+
+.hobby-images {
+  max-width: 300px;
+}
+
+.hobbies-card {
+  padding: 2px;
 }
 
 @media (min-width: 768px) {
@@ -272,6 +286,10 @@ button:focus-visible {
   transform: scale(1.1); /* Increase size on hover */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
 }
+
+/*------------------------------ End of Hobbies.CSS ------------------------------*/
+
+/*------------------------------ Start of JSON.CSS ------------------------------*/
 
 .h1-json {
   text-align: center;
@@ -307,3 +325,5 @@ button:focus-visible {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
   transition: transform 0.3s, box-shadow 0.3s;
 }
+
+/*------------------------------ End of JSON.CSS ------------------------------*/
