@@ -1,9 +1,7 @@
-// CalculatorComponent.tsx
-
 import React, { useState } from 'react';
 
 interface CalculatorProps {
-  // You can define props that your calculator component might need
+  // define props that calculator component might need
 }
 
 const CalculatorComponent: React.FC<CalculatorProps> = () => {
@@ -14,9 +12,21 @@ const CalculatorComponent: React.FC<CalculatorProps> = () => {
       // Ignore operators if display is '0'
       return;
     }
-
-    setDisplay((prevDisplay) => (prevDisplay === '0' ? value : prevDisplay + value));
+  
+    // Check if the last character in the display is an operator
+    const lastCharIsOperator = ['/', '*', '-', '+'].includes(display.slice(-1));
+  
+    // If the new value is an operator and the last character is also an operator, replace it
+    if (['/', '*', '-', '+'].includes(value) && lastCharIsOperator) {
+      setDisplay((prevDisplay) => prevDisplay.slice(0, -1) + value);
+    } else if (lastCharIsOperator && value === '0') {
+      // If the last character is an operator and the new value is zero, do nothing
+      return;
+    } else {
+      setDisplay((prevDisplay) => (prevDisplay === '0' ? value : prevDisplay + value));
+    }
   };
+  
 
   const handleCalculate = () => {
     try {

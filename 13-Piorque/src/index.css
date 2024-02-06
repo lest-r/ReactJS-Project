@@ -327,3 +327,22 @@ button:focus-visible {
 }
 
 /*------------------------------ End of JSON.CSS ------------------------------*/
+
+
+.page-enter {
+  opacity: 0;
+}
+
+.page-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.page-exit {
+  opacity: 1;
+}
+
+.page-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-out;
+}
