@@ -46,7 +46,7 @@ const JsonComponent: React.FC = () => {
           <p>Loading...</p>
         ) : (
           users.map(user => (
-            <div key={user.id} className="col-md-3 mb-4">
+            <div key={user.id} className="col-md-4 col-lg-4 mb-4">
               <div className="json-card">
                 <div className="card-body">
                   <h5 className="json-card-name">{user.name}</h5>

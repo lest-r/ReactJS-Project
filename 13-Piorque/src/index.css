@@ -60,7 +60,7 @@ h1 {
 
 .h1-title {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-align: center;
   line-height: 1.1;
   align-items: center;
@@ -68,19 +68,6 @@ h1 {
   display: flex;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   margin-top: -30px;
-}
-
-.h1-title-hobbies {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 300%;
-  text-align: center;
-  line-height: 1.1;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  margin-top: 20px;
-  margin-bottom: 5px;
 }
 
 button {
@@ -146,7 +133,7 @@ button:focus-visible {
 
 .h1-title-calculator {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 300%;
+  font-size: 3.5rem;
   text-align: center;
   line-height: 1.1;
   align-items: center;
@@ -213,6 +200,19 @@ button:focus-visible {
 /*------------------------------ End of Calculator.CSS ------------------------------*/
 
 /*------------------------------- Start of Hobbies.CSS -------------------------------*/
+
+.h1-title-hobbies {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 3.5rem;
+  text-align: center;
+  line-height: 1.1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
 
 .card {
   width: 80%;
@@ -300,7 +300,7 @@ button:focus-visible {
 }
 
 .json-card-usermail {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1px;
   margin-bottom: 15px;
 }
@@ -315,7 +315,7 @@ button:focus-visible {
   background-color: #ffffff;
   border-radius: 10px;
   padding: 10px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   padding-left: 25px;
   margin-top: 20px;
 }
