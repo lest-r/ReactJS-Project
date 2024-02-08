@@ -60,7 +60,7 @@ h1 {
 
 .h1-title {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-align: center;
   line-height: 1.1;
   align-items: center;
@@ -210,7 +210,7 @@ button:focus-visible {
   justify-content: center;
   display: flex;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 5px;
 }
 
